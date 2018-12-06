@@ -1,5 +1,5 @@
-[Aller vers le Prosit sur Moodle](https://moodle-exia.cesi.fr/course/view.php?id=333)
-[Aller vers le Workshop sur Moodle](https://moodle-exia.cesi.fr/pluginfile.php/34398/mod_resource/content/1/EX_A2_S3_Web_WS_1_HTML_CSS_Etudiant.pdf)
+- [Aller vers le Prosit sur Moodle](https://moodle-exia.cesi.fr/course/view.php?id=333)
+- [Aller vers le Workshop sur Moodle](https://moodle-exia.cesi.fr/pluginfile.php/34398/mod_resource/content/1/EX_A2_S3_Web_WS_1_HTML_CSS_Etudiant.pdf)
 
 ### Tasks
 
