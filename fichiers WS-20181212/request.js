@@ -27,6 +27,6 @@ getJSON('http://geekpress.fr/wp-json/wp/v2/users')
             getJSON('http://geekpress.fr/wp-json/wp/v2/posts?author=' + userID)
                 .then((postsData) => {
                     article.querySelector('#nb' + i).innerHTML += postsData.length;
-                });
+                }).catch(err=>console.log(err));
         });
     });
