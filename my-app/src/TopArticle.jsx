@@ -15,7 +15,7 @@ export class TopArticle extends Component {
   }
 
   render() {
-    this.list(5);
+    this.list(2);
     return <section className="top-article row">{this.listArticle}</section>;
   }
 }

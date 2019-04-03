@@ -1,4 +1,4 @@
-function loadJSON(callback) {
+const loadJSON = callback => {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
     xobj.open('GET', 'data.json', true); // Replace 'data' with the path to your file
@@ -11,12 +11,12 @@ function loadJSON(callback) {
     xobj.send(null);
 }
 
-function init() {
+const init = new Promise((resp) => {
     loadJSON(response => {
         let data = JSON.parse(response);
 
         // Filter out the personnel who can’t use the force
-        let filter = data.filter(person => person.isForceUser);
+        let filter = data.filter(person => person.name === "Ezra Bridger");
         console.log(filter);
 
         // We now need to create an array containing the total score of each Jedi.
@@ -25,11 +25,9 @@ function init() {
 
         // Reduce to get the total
         let reduce = map.reduce((acc, score) => acc + score, 0);
-        console.log(reduce);
+        resp(reduce);
     });
-
-    
-}
+});
 
 // Get the total score of force users only !
-init();
+init.then((res)=>console.log(res));
